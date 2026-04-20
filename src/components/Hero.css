@@ -1,0 +1,126 @@
+.hero {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background-color: var(--color-bg);
+  overflow: hidden;
+  padding-top: var(--header-height);
+  color: var(--color-text);
+}
+
+.hero-bg-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: radial-gradient(var(--color-primary) 1px, transparent 1px);
+  background-size: 40px 40px;
+  opacity: 0.05;
+  z-index: 1;
+}
+
+.hero-container {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+}
+
+.hero-glass-card {
+  background: var(--glass-bg);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: var(--glass-border);
+  border-radius: 24px;
+  padding: 4rem;
+  box-shadow: var(--shadow-lg);
+  max-width: 800px;
+}
+
+.hero-title {
+  font-size: clamp(3rem, 5vw, 4.5rem);
+  color: var(--color-primary);
+  margin-bottom: 1.5rem;
+  line-height: 1.1;
+}
+
+.text-gradient {
+  background: linear-gradient(to right, var(--color-primary), var(--color-accent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.hero-subtitle {
+  font-size: 1.25rem;
+  color: var(--color-text-muted);
+  margin-bottom: 2.5rem;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+.hero-cta {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn-lg {
+  padding: 1rem 2.5rem;
+  font-size: 1rem;
+}
+
+.floating-shape {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(80px);
+  z-index: 0;
+  opacity: 0.3;
+}
+
+.shape-1 {
+  width: 50vw;
+  height: 50vw;
+  background: var(--color-primary-light);
+  top: -10vw;
+  right: -10vw;
+}
+
+.shape-2 {
+  width: 40vw;
+  height: 40vw;
+  background: var(--color-accent);
+  bottom: -5vw;
+  left: -10vw;
+}
+
+.shape-3 {
+  width: 30vw;
+  height: 30vw;
+  background: #a5b4fc;
+  top: 30%;
+  left: 20%;
+  animation: floatShape 10s infinite alternate ease-in-out;
+}
+
+@keyframes floatShape {
+  0% { transform: translate(0, 0) scale(1); }
+  100% { transform: translate(10vw, -10vw) scale(1.1); }
+}
+
+@media (max-width: 768px) {
+  .hero-glass-card {
+    padding: 2rem;
+  }
+  .hero-title {
+    font-size: 2.5rem;
+  }
+  .hero-cta {
+    flex-direction: column;
+    width: 100%;
+  }
+  .hero-cta .btn {
+    width: 100%;
+  }
+}

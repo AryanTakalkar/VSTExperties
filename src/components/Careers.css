@@ -1,0 +1,113 @@
+.careers-section {
+  background-color: var(--color-surface);
+  padding: 6rem 0;
+}
+
+.careers-card {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+  border-radius: 20px;
+  display: flex;
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+  color: white;
+  position: relative;
+}
+
+.careers-content {
+  flex: 1;
+  padding: 4rem;
+  position: relative;
+  z-index: 2;
+}
+
+.careers-content h2 {
+  color: white;
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.careers-content p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+  max-width: 500px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.btn-whatsapp {
+  background-color: #25D366;
+  color: white;
+  display: inline-flex;
+  font-weight: 600;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  border-radius: 50px;
+}
+
+.btn-whatsapp:hover {
+  background-color: #128C7E;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 20px rgba(37, 211, 102, 0.3);
+}
+
+.mr-2 {
+  margin-right: 0.5rem;
+}
+
+.mt-3 {
+  margin-top: 1rem;
+}
+
+.contact-number {
+  font-size: 0.9rem !important;
+  color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.careers-visual {
+  flex: 1;
+  position: relative;
+  background-color: rgba(255, 255, 255, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dots-pattern {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.2) 2px, transparent 2px);
+  background-size: 20px 20px;
+}
+
+.accent-circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background-color: var(--color-accent);
+  position: relative;
+  z-index: 1;
+  box-shadow: 0 0 60px rgba(201, 168, 76, 0.4);
+  animation: pulse 4s infinite alternate;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  100% { transform: scale(1.1); }
+}
+
+@media (max-width: 992px) {
+  .careers-card {
+    flex-direction: column;
+  }
+  
+  .careers-content {
+    padding: 3rem 2rem;
+  }
+  
+  .careers-visual {
+    min-height: 200px;
+  }
+}
