@@ -35,7 +35,7 @@ const Navbar = () => {
           <ul className="nav-links">
             {navLinks.map((link) => (
               <li key={link.name}>
-                <a href={link.href} className="nav-link">{link.name}</a>
+                <a href={link.href} className={`nav-link ${['Clients', 'Careers'].includes(link.name) ? 'nav-link-light' : ''}`}>{link.name}</a>
               </li>
             ))}
           </ul>

@@ -89,7 +89,7 @@ const About = () => {
               <div className="visual-shape primary"></div>
               <div className="visual-shape accent"></div>
               <div className="visual-image-container">
-                <img src="/images/about_premium.png" alt="Professional workforce" className="about-image" />
+                <img src="/images/about_indian.png" alt="Professional workforce" className="about-image" />
               </div>
             </div>
           </motion.div>

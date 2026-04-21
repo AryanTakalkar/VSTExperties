@@ -24,7 +24,7 @@
 
 .client-logo {
   flex: 0 0 auto;
-  width: 200px;
+  width: 260px;
   height: 200px;
   display: flex;
   flex-direction: column;
@@ -37,7 +37,7 @@
 }
 
 .client-logo-img {
-  width: 100px;
+  width: 180px;
   height: 100px;
   object-fit: contain;
   margin-bottom: 1.5rem;

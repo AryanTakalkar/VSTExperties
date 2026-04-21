@@ -44,7 +44,7 @@ const Services = () => {
           <motion.div variants={cardVariants}>
             <Tilt tiltMaxAngleX={8} tiltMaxAngleY={8} scale={1.02} transitionSpeed={2000} className="service-card hover-card">
               <div className="service-card-image">
-              <img src="/images/services.png" alt="Skilled Workforce" />
+              <img src="/images/services_indian.png" alt="Skilled Workforce" />
             </div>
             <div className="card-header">
               <div className="service-icon">
@@ -71,7 +71,7 @@ const Services = () => {
           <motion.div variants={cardVariants}>
             <Tilt tiltMaxAngleX={8} tiltMaxAngleY={8} scale={1.02} transitionSpeed={2000} className="service-card hover-card">
               <div className="service-card-image">
-              <img src="/images/about.png" alt="Support Workforce" />
+              <img src="/images/support_indian.png" alt="Support Workforce" />
             </div>
             <div className="card-header">
               <div className="service-icon">

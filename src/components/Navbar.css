@@ -59,10 +59,30 @@
   gap: 2rem;
 }
 
+.navbar:not(.scrolled) .nav-btn {
+  background-color: white;
+  color: var(--color-primary);
+  border-color: white;
+}
+
+.navbar:not(.scrolled) .nav-btn:hover {
+  background-color: var(--color-accent);
+  color: white;
+  border-color: var(--color-accent);
+}
+
 .nav-links {
   display: flex;
   list-style: none;
   gap: 2rem;
+}
+
+.navbar:not(.scrolled) .nav-link-light {
+  color: white;
+}
+
+.navbar:not(.scrolled) .nav-link-light:hover {
+  color: var(--color-accent);
 }
 
 .nav-link {

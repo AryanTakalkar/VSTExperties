@@ -6,9 +6,9 @@ import './Clients.css';
 const Clients = () => {
   const clients = [
     { name: 'Tata Projects', logo: '/logos/tata.png' },
-    { name: 'Badve Industries', logo: '/logos/badve.png' },
+    { name: 'Belrise Industries', logo: '/logos/belrise.png' },
     { name: 'Jadhavar Group of Colleges', logo: '/logos/jadhavar.png' },
-    { name: 'D-Mart', logo: '/logos/dmart.png', badge: 'Coming Soon' },
+    { name: 'D-Mart', logo: '/logos/dmart.png' },
   ];
 
   return (
