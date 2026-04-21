@@ -1,6 +1,7 @@
 .why-us-section {
-  background-color: white;
+  background-color: transparent;
   position: relative;
+  overflow: hidden;
 }
 
 /* Background subtle pattern */

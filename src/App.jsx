@@ -13,6 +13,14 @@ import './App.css';
 function App() {
   return (
     <div className="app">
+      {/* Global Background */}
+      <div className="global-bg">
+        <div className="hero-bg-overlay"></div>
+        <div className="floating-shape shape-1"></div>
+        <div className="floating-shape shape-2"></div>
+        <div className="floating-shape shape-3"></div>
+      </div>
+
       <Navbar />
       <main>
         <Hero />

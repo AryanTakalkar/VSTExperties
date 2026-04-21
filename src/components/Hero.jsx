@@ -6,11 +6,12 @@ import './Hero.css';
 const Hero = () => {
   return (
     <section id="hero" className="hero">
-      <div className="hero-bg-overlay"></div>
       <div className="container hero-container">
+        <div className="hero-grid">
           <motion.div 
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
+            className="hero-content"
+            initial={{ opacity: 0, x: -30 }}
+            animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 1, type: "spring", bounce: 0.3 }}
           >
             <Tilt tiltMaxAngleX={5} tiltMaxAngleY={5} scale={1.02} transitionSpeed={2000} className="hero-glass-card">
@@ -44,27 +45,38 @@ const Hero = () => {
             <a href="#careers" className="btn btn-secondary btn-lg">Join as a Professional</a>
           </motion.div>
           </Tilt>
-        </motion.div>
+          </motion.div>
+
+          <motion.div 
+            className="hero-image-grid"
+            initial={{ opacity: 0, x: 30 }}
+            animate={{ opacity: 1, x: 0 }}
+            transition={{ duration: 1, delay: 0.3, type: "spring", bounce: 0.3 }}
+          >
+            <motion.div 
+              className="grid-image grid-image-1"
+              animate={{ y: [0, -15, 0] }}
+              transition={{ duration: 5, repeat: Infinity, ease: "easeInOut" }}
+            >
+              <img src="/images/hero_1.png" alt="Corporate Team" />
+            </motion.div>
+            <motion.div 
+              className="grid-image grid-image-2"
+              animate={{ y: [0, 20, 0] }}
+              transition={{ duration: 6, repeat: Infinity, ease: "easeInOut", delay: 1 }}
+            >
+              <img src="/images/hero_2.png" alt="Construction Workforce" />
+            </motion.div>
+            <motion.div 
+              className="grid-image grid-image-3"
+              animate={{ y: [0, -10, 0] }}
+              transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 2 }}
+            >
+              <img src="/images/hero_3.png" alt="Logistics Experts" />
+            </motion.div>
+          </motion.div>
+        </div>
       </div>
-      
-      {/* Decorative floating elements */}
-      <motion.div 
-        className="floating-shape shape-1"
-        animate={{ 
-          y: [0, -20, 0],
-          rotate: [0, 5, 0]
-        }}
-        transition={{ duration: 6, repeat: Infinity, ease: "easeInOut" }}
-      />
-      <motion.div 
-        className="floating-shape shape-2"
-        animate={{ 
-          y: [0, 30, 0],
-          rotate: [0, -10, 0]
-        }}
-        transition={{ duration: 8, repeat: Infinity, ease: "easeInOut" }}
-      />
-      <div className="floating-shape shape-3"></div>
     </section>
   );
 };
